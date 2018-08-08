@@ -58,7 +58,7 @@ List_ZombieBoss = _zombieBoss;
 List_ZombieWalker = _zombieWalker;
 
 _bandits = [];
-_groupConfig = configfile >> "CfgGroups" >> "Indep" >> "IND_C_F" >> "Infantry" >> "BanditCombatGroup";
+_groupConfig = configfile >> "CfgGroups" >> "West" >> "Guerilla" >> "Infantry" >> "IRG_InfSquad";
 _count = count (_groupConfig);
 for "_x" from 0 to (_count-1) do {
     _item=((_groupConfig) select _x);
@@ -69,7 +69,7 @@ for "_x" from 0 to (_count-1) do {
 List_Bandits = _bandits;
 
 _paraBandits = [];
-_groupConfig = configfile >> "CfgGroups" >> "Indep" >> "IND_C_F" >> "Infantry" >> "ParaCombatGroup";
+_groupConfig = configfile >> "CfgGroups" >> "West" >> "Guerilla" >> "Infantry" >> "IRG_ReconSentry";
 _count = count (_groupConfig);
 for "_x" from 0 to (_count-1) do {
     _item=((_groupConfig) select _x);

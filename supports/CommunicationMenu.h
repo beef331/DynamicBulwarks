@@ -19,7 +19,16 @@ class reconUAV
     enable = "1";
     removeAfterExpressionCall = 1;
 };
-
+class supplyDrop
+{
+    text = "Supply Drop";
+    submenu = "";
+    expression = "[getPosASL player] execVM 'supplyDrop.sqf';";
+    icon = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\supplyDrop_ca.paa";
+    cursor = "\a3\Ui_f\data\IGUI\Cfg\Cursors\iconCursorSupport_ca.paa";
+    enable = "1";
+    removeAfterExpressionCall = 1;
+};
 class airStrike
 {
     text = "Missle CAS";

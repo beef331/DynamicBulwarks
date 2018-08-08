@@ -1,6 +1,5 @@
 waitUntil {!isNil "bulwarkBox"};
 ["Terminate"] call BIS_fnc_EGSpectator;
-
 _player = _this select 0;
 removeHeadgear _player:
 removeGoggles _player;
@@ -9,7 +8,8 @@ removeBackpack _player;
 removeAllWeapons _player:
 removeAllAssignedItems _player;
 _player setPosASL ([bulwarkBox] call bulwark_fnc_findPlaceAround);
-
+_player addItem "ItemCompass";
+_player assignItem "ItemCompass";
 if(PLAYER_STARTWEAPON) then {
     _player addMagazine "16Rnd_9x21_Mag";
     _player addMagazine "16Rnd_9x21_Mag";

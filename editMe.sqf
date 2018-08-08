@@ -58,6 +58,8 @@ SCORE_RANDOMBOX = 950;  // Cost to spin the box
 
 BULWARK_SUPPORTITEMS = [
     [800,  "Recon UAV",     "reconUAV"],
+    [1000,  "Supply Drop",     "supplyDrop"],
+    [1200,   "Reveal Loot",  "lootDrone"],
     [1950, "Paratroopers",  "paraDrop"],
     [5430, "Missle CAS",    "airStrike"],
     [5930, "Rage Stimpack", "ragePack"],
@@ -66,21 +68,29 @@ BULWARK_SUPPORTITEMS = [
 
 /* Price - Display Name - Class Name - Rotation When Held */
 BULWARK_BUILDITEMS = [
+    [25,   "Wood Wall",       "Land_Shoot_House_Wall_Long_Crouch_F",    0],
     [50,   "Junk Barricade",       "Land_Barricade_01_4m_F",            0],
+    [75,   "Bridge",               "Land_Obstacle_Bridge_F",            0],
     [100,  "Short Sandbag Wall",   "Land_SandbagBarricade_01_half_F",   0],
     [150,  "Sandbag Barricade",    "Land_SandbagBarricade_01_hole_F",   0],
     [250,  "Tall Concrete Wall",   "Land_Mil_WallBig_4m_F",             0],
+    [250,  "Gate",                 "Land_City_Gate_F",                  0],
     [400,  "Ramp",                 "Land_VR_Slope_01_F",                0],
+    [500,  "Shed",                  "Land_Metal_Shed_F",                0],
     [500,  "H Barrier",            "Land_HBarrier_3_F",                 0],
     [750,  "Ladder",               "Land_PierLadder_F",                 0],
     [800,  "Storage box small",    "Box_NATO_Support_F",                0],
     [1000, "Hallogen Lamp",        "Land_LampHalogen_F",              180],
+    [1000,   "Cement Pad",            "BlockConcrete_F",                0],
     [1000, "Double H Barrier",     "Land_HBarrierWall4_F",              0],
     [1200, "Storage box large",    "Box_NATO_AmmoVeh_F",                0],
+    [1500,   "Cargo House",           "Land_Cargo_House_V1_F",          0],
     [2500, "Machine Gun",          "B_HMG_01_F",                        0],
     [2500, "Machine Gun (raised)", "B_HMG_01_high_F",                   0],
     [3000, "Small Bunker",         "Land_BagBunker_Small_F",            0],
-    [5000, "Guard Tower",          "Land_Cargo_Patrol_V3_F",          180]
+    [4000,   "Pier",                  "Land_Pier_F",                    0],
+    [5000, "Guard Tower",          "Land_Cargo_Patrol_V3_F",          180],
+    [10000, "Large Guard Tower",   "Land_Cargo_Tower_V1_F",           180]
 ];
 
 /* Time of Day*/

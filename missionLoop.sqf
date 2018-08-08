@@ -21,6 +21,7 @@ runMissionLoop = true;
 missionFailure = false;
 
 while {runMissionLoop} do {
+	
 	for ("_i") from 0 to 14 do {
 		if(_i > 10) then {"beep_target" remoteExec ["playsound", 0];} else {"readoutClick" remoteExec ["playsound", 0];};
 		[format ["<t>%1</t>", 15-_i], 0, 0, 1, 0] remoteExec ["BIS_fnc_dynamicText", 0];
@@ -41,6 +42,9 @@ while {runMissionLoop} do {
 	AIStuckCheckArray = [];
 
 	["TaskAssigned",["In-coming","Wave " + str attkWave]] remoteExec ["BIS_fnc_showNotification", 0];
+	if(attkWave <=1) then{
+			[ [],'supports\lootDrone.sqf'] remoteExec ['execVM',0];
+	};
 	[9999] remoteExec ["setPlayerRespawnTime", 0];
 	if (isServer) then {
 		// Delete
@@ -62,7 +66,7 @@ while {runMissionLoop} do {
 	};
 
 	while {runMissionLoop} do {
-
+		[] remoteExec ["killPoints_fnc_updateHud", 0];
 		//Check if all hostiles dead
 		if (east countSide allUnits == 0) exitWith {};
 		//check if all players dead or unconscious
