@@ -20,8 +20,8 @@ if(_shopClass == "") exitWith {};
    
 
 if(player getVariable "killPoints" >= _shopPrice) then {
-    if(_shopClass != "lootDrone") then {
     [player, _shopPrice] remoteExec ["killPoints_fnc_spend", 2];
+    if(_shopClass != "lootDrone") then {
     [player, _shopClass] call BIS_fnc_addCommMenuItem;
     }else{
         [ [],'supports\lootDrone.sqf'] remoteExec ['execVM',0];
